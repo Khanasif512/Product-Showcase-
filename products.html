@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase - Tailwind CSS</title>
+  <!-- tailwind CDN link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- icons - fontAwesome CDN link -->
+  <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-screen" style="background-image: url('https://via.placeholder.com/1920x1080');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="text-center text-white px-6">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+          Welcome to XGENIOUS Showcase
+        </h1>
+        <p class="text-lg md:text-xl mb-6">
+          We provide innovative IT solutions that take your business to the next level
+        </p>
+        <a href="#products" class="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium text-lg rounded shadow-lg">
+          Newly Added Products
+        </a>
+      </div>
+    </div>
+
+    <div class="absolute top-6 right-6">
+      <a href="index.html" class="px-6 py-3 bg-gradient-to-r from-[#2b2d42] to-[#ef233c] text-white font-semibold text-lg rounded-full shadow-xl transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:opacity-80 flex items-center space-x-3">
+        <i class="fas fa-arrow-left text-lg"></i>
+        <span>Back to Home</span>
+      </a>
+    </div>
+    
+    
+    
+  </section>
+
+  <!-- Product Grid Section -->
+  <section id="products" class="py-12 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8">Our Products</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <!-- Product Card 1 -->
+        <div class="bg-white border border-gray-200 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-xl transition-transform duration-300">
+          <img class="rounded-t-lg w-full h-64 object-cover" src="https://via.placeholder.com/300" alt="Product 1">
+          <div class="p-6 text-center">
+            <h5 class="text-xl font-semibold text-gray-800 mb-4">Product 1</h5>
+            <p class="text-red-600 text-lg mb-4">৳100</p>
+            <button 
+            class="px-6 py-2 bg-red-600 hover:bg-red-700 text-white font-medium rounded-full shadow-md transition duration-300 transform hover:scale-105"
+            onclick="addToCart('Product 1')">
+            Buy Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="bg-white border border-gray-200 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-xl transition-transform duration-300">
+          <img class="rounded-t-lg w-full h-64 object-cover" src="https://via.placeholder.com/300" alt="Product 2">
+          <div class="p-6 text-center">
+            <h5 class="text-xl font-semibold text-gray-800 mb-4">Product 2</h5>
+            <p class="text-red-600 text-lg mb-4">৳150</p>
+            <button 
+            class="px-6 py-2 bg-red-600 hover:bg-red-700 text-white font-medium rounded-full shadow-md transition duration-300 transform hover:scale-105"
+            onclick="addToCart('Product 1')">
+            Buy Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="bg-white border border-gray-200 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-xl transition-transform duration-300">
+          <img class="rounded-t-lg w-full h-64 object-cover" src="https://via.placeholder.com/300" alt="Product 3">
+          <div class="p-6 text-center">
+            <h5 class="text-xl font-semibold text-gray-800 mb-4">Product 3</h5>
+            <p class="text-red-600 text-lg mb-4">৳200</p>
+            <button 
+            class="px-6 py-2 bg-red-600 hover:bg-red-700 text-white font-medium rounded-full shadow-md transition duration-300 transform hover:scale-105"
+            onclick="addToCart('Product 1')">
+            Buy Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="bg-white border border-gray-200 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-xl transition-transform duration-300">
+          <img class="rounded-t-lg w-full h-64 object-cover" src="https://via.placeholder.com/300" alt="Product 4">
+          <div class="p-6 text-center">
+            <h5 class="text-xl font-semibold text-gray-800 mb-4">Product 4</h5>
+            <p class="text-red-600 text-lg mb-4">৳250</p>
+            <button 
+            class="px-6 py-2 bg-red-600 hover:bg-red-700 text-white font-medium rounded-full shadow-md transition duration-300 transform hover:scale-105"
+            onclick="addToCart('Product 1')">
+            Buy Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="bg-white border border-gray-200 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-xl transition-transform duration-300">
+          <img class="rounded-t-lg w-full h-64 object-cover" src="https://via.placeholder.com/300" alt="Product 5">
+          <div class="p-6 text-center">
+            <h5 class="text-xl font-semibold text-gray-800 mb-4">Product 5</h5>
+            <p class="text-red-600 text-lg mb-4">৳300</p>
+            <button 
+            class="px-6 py-2 bg-red-600 hover:bg-red-700 text-white font-medium rounded-full shadow-md transition duration-300 transform hover:scale-105"
+            onclick="addToCart('Product 1')">
+            Buy Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="bg-white border border-gray-200 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-xl transition-transform duration-300">
+          <img class="rounded-t-lg w-full h-64 object-cover" src="https://via.placeholder.com/300" alt="Product 6">
+          <div class="p-6 text-center">
+            <h5 class="text-xl font-semibold text-gray-800 mb-4">Product 6</h5>
+            <p class="text-red-600 text-lg mb-4">৳350</p>
+            <button 
+            class="px-6 py-2 bg-red-600 hover:bg-red-700 text-white font-medium rounded-full shadow-md transition duration-300 transform hover:scale-105"
+            onclick="addToCart('Product 1')">
+            Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer Section -->
+  <!-- Footer Section -->
+  <footer class="bg-[#2b2d42] text-[#edf2f4] py-8 text-center">
+    <div class="container mx-auto">
+      <p class="text-lg mb-3">Follow us on social media:</p>
+      <div class="mt-3 mb-3">
+        <a href="https://facebook.com" target="_blank" class="text-[#edf2f4] mx-3 text-1.5xl hover:text-[#ef233c] transition-colors duration-300">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="text-[#edf2f4] mx-3 text-1.5xl hover:text-[#ef233c] transition-colors duration-300">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="text-[#edf2f4] mx-3 text-1.5xl hover:text-[#ef233c] transition-colors duration-300">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p class="mt-3 text-base">© 2024 Product Showcase. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+  // Function to handle adding a product to the cart
+  function addToCart(productName) {
+    alert(productName + " added to cart!");
+  }
+</script>
+
+
+</body>
+
+</html>
